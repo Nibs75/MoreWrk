@@ -1,0 +1,31 @@
+module LabL3;
+integer i, j, k;
+parameter SIZE = 32; // bus width is 32
+wire [SIZE-1:0] z; // 32 -1 = 31 so its [31:0]
+reg c;
+reg[SIZE-1:0] a,b; //[31:0]
+
+
+yMux #32 M(z,a,b,c);
+
+// Start of new code
+initial
+begin
+	repeat(10)
+	begin
+		a = $random;
+		b = $random;
+		c= $random % 2;
+		#1;
+		if(c === 1 && z === b)
+		$display("PASS a=%b b=%b c=%b z=%b", a, b, c, z);
+		else if(c === 0 && z === a) 
+		$display("PASS a=%b b=%b c=%b z=%b", a, b, c, z);
+		else
+		$display("FAIL! a=%b b=%b c=%b z=%b", a, b, c, z );
+
+      end
+$finish;
+end
+
+endmodule
