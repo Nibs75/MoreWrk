@@ -1,0 +1,23 @@
+Today's lab was on adding more hardware into the cpu on verilog. Throughout this lab, I learned how to create registers in verilog, RF, and MEM.
+
+First in the lab I leanred how to create a 32-bit register with inclusion to clock cycles and instruction counts. This part of the lab mentions what would happen if the user were to input a 1 into the code.
+
+The next part of the lab is to modify the first part of the  lab and make the clock and the register d equal to 0 and smaller. I had reset the clock such with  certain unit of time, the clock will count  between 0 and 1.
+
+This part of the lab is very important as it describes the process of reading memory, writing memory, and inputting memory. With the implementation, it's similar to the previous part of the lab where you need to reset the clock but this time, you need to display what the address is and what is contains.
+
+Part 5 of this lab is to create a .dat file where verilog will read it and execute the code and print out the code in Machine langauge. Also, this part of the code will repeart 11 times. With this, we were introduced to what a RISC-V version will look like and with that, we have to convert it to hexadecimal with the instructions associated with it. All of those instructions will be placed into a .dat file. Part 5 and part 6 are similar in implementation while part 6 requires us to print out what each segment of the code represents in terms of registers, opcode, etc. 
+
+The CPU part of this lab is made up of many parts, the fetch instruction, insrtruction decoder, and the instruction execution block.
+
+Mainly I had to edit the cpu.v file to add in the many blocks the cpu will have and from this, I can compile the cpu and the lab files so that the new instructions will ne utilizied. 
+
+In conclusion, this lab taught us a lot in terms of building up blocks of a cpu. 
+
+ 
+
+
+
+
+
+
