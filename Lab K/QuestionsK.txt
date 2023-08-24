@@ -1,0 +1,13 @@
+1) Why are the times for the last 2 instructions 30 and 60 rather than #20 and #30?
+This is because #20 and #30 before instruction is used as a delay to the current instruction value.
+So the counters would need to have value of #10 to make it show 20 and 30 in the output.
+
+2) Why did the program fail to capture the output of the circuit?
+The reason being is because assignined inputs of different logic gates cannot be sematically correct. That is why when the code is run, the outout is 0.
+
+3)What happens if the user forgot to specify one or more of the needed arguments?
+There would a  compiler error as a has no value
+
+4)Is it possible to detect if one or more of the needed arguemnts is missing?
+If a is missing, then there will be a conditional statement saying if a ==0 then display a message saying a has no value and the same for any other arguments.
+ 
